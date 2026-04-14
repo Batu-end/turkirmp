@@ -1,6 +1,8 @@
 // ============================================
 // Database types matching the Supabase schema
 // ============================================
+// Descriptive TypeScript interface
+// ============================================
 
 export interface University {
   id: string;

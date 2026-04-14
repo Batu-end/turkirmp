@@ -1,3 +1,5 @@
+// All database operations in one place. Every function talks to Supabase.
+
 import { supabase } from './supabaseClient';
 import type {
   University,

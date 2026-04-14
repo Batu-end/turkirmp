@@ -1,3 +1,5 @@
+// The form for submitting a review on a professor’s page.
+
 'use client';
 
 import { useState } from 'react';

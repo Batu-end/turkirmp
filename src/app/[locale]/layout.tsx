@@ -1,3 +1,5 @@
+// Wraps EVERY page with shared providers and HTML structure.
+
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';

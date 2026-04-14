@@ -1,3 +1,5 @@
+// The university search autocomplete on the homepage.
+
 'use client';
 
 import { useState, useEffect } from 'react';

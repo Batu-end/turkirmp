@@ -1,3 +1,5 @@
+// The navigation bar at the top of every page.
+
 'use client';
 
 import { useLocale, useTranslations } from 'next-intl';

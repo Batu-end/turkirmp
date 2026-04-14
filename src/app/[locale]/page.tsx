@@ -1,3 +1,5 @@
+// A full-viewport dark gradient hero section with:
+
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { use } from 'react';
