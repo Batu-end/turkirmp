@@ -58,6 +58,7 @@ export async function searchProfessors(query: string): Promise<SearchResult[]> {
 
   if (error) throw error;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return (data ?? []).map((item: any) => ({
     id: item.id,
     slug: item.slug,

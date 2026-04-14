@@ -56,8 +56,8 @@ export default function SearchBar() {
     return () => clearTimeout(timer);
   }, [inputValue]);
 
-  const handleSelect = (_: any, value: UniversityResult | null) => {
-    if (value) {
+  const handleSelect = (_: React.SyntheticEvent, value: string | UniversityResult | null) => {
+    if (value && typeof value !== 'string') {
       router.push(`/${locale}/universite/${value.slug}`);
     }
   };

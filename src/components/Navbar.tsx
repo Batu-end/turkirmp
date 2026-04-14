@@ -7,7 +7,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import IconButton from '@mui/material/IconButton';
 import Container from '@mui/material/Container';
 
 export default function Navbar() {
@@ -16,13 +15,7 @@ export default function Navbar() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const switchLocale = () => {
-    const newLocale = locale === 'tr' ? 'en' : 'tr';
-    // Replace the locale segment in the pathname
-    const segments = pathname.split('/');
-    segments[1] = newLocale;
-    router.push(segments.join('/'));
-  };
+
 
   return (
     <AppBar

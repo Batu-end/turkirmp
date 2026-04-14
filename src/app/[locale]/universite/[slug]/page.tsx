@@ -9,8 +9,6 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Chip from '@mui/material/Chip';
-import TextField from '@mui/material/TextField';
-import InputAdornment from '@mui/material/InputAdornment';
 import Navbar from '@/components/Navbar';
 import { getUniversityBySlug, getProfessorsByUniversity } from '@/lib/queries';
 import type { Metadata } from 'next';
