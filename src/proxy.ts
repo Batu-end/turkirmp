@@ -1,3 +1,5 @@
+// Next.js middleware. Runs BEFORE every page request.
+
 import createMiddleware from 'next-intl/middleware';
 import { routing } from './i18n/routing';
 

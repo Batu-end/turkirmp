@@ -1,3 +1,5 @@
+// Defines the supported languages and default.
+
 import { defineRouting } from 'next-intl/routing';
 
 export const routing = defineRouting({

@@ -1,3 +1,5 @@
+// Create locale aware versions of Next.js navigation functions.
+
 import { createNavigation } from 'next-intl/navigation';
 import { routing } from './routing';
 

@@ -1,3 +1,5 @@
+// Defines visual design system for the entire app using MUI's CreateTheme()
+
 'use client';
 import { createTheme } from '@mui/material/styles';
 
