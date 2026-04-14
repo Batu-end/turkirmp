@@ -61,25 +61,77 @@ export default function Navbar() {
             >
               {t('home')}
             </Button>
-            <Button
-              onClick={switchLocale}
-              variant="outlined"
-              size="small"
+            <Box
               sx={{
-                borderColor: 'rgba(26, 26, 46, 0.2)',
-                color: 'text.primary',
-                fontWeight: 600,
-                fontSize: '0.8rem',
-                minWidth: 'auto',
-                px: 2,
-                '&:hover': {
-                  borderColor: '#e94560',
-                  color: '#e94560',
-                },
+                display: 'flex',
+                alignItems: 'center',
+                border: '1px solid rgba(26, 26, 46, 0.15)',
+                borderRadius: 2,
+                overflow: 'hidden',
               }}
             >
-              {t('language')}
-            </Button>
+              <Box
+                component="button"
+                onClick={() => {
+                  if (locale !== 'tr') {
+                    const segments = pathname.split('/');
+                    segments[1] = 'tr';
+                    router.push(segments.join('/'));
+                  }
+                }}
+                sx={{
+                  border: 'none',
+                  cursor: locale === 'tr' ? 'default' : 'pointer',
+                  px: 1.5,
+                  py: 0.6,
+                  fontSize: '0.8rem',
+                  fontWeight: 600,
+                  fontFamily: 'inherit',
+                  background: locale === 'tr' ? '#e94560' : 'transparent',
+                  color: locale === 'tr' ? '#fff' : '#4a4a6a',
+                  transition: 'all 0.2s ease',
+                  '&:hover': {
+                    background: locale === 'tr' ? '#e94560' : 'rgba(233, 69, 96, 0.08)',
+                  },
+                }}
+              >
+                Türkçe
+              </Box>
+              <Box
+                sx={{
+                  width: '1px',
+                  height: 20,
+                  background: 'rgba(26, 26, 46, 0.15)',
+                }}
+              />
+              <Box
+                component="button"
+                onClick={() => {
+                  if (locale !== 'en') {
+                    const segments = pathname.split('/');
+                    segments[1] = 'en';
+                    router.push(segments.join('/'));
+                  }
+                }}
+                sx={{
+                  border: 'none',
+                  cursor: locale === 'en' ? 'default' : 'pointer',
+                  px: 1.5,
+                  py: 0.6,
+                  fontSize: '0.8rem',
+                  fontWeight: 600,
+                  fontFamily: 'inherit',
+                  background: locale === 'en' ? '#e94560' : 'transparent',
+                  color: locale === 'en' ? '#fff' : '#4a4a6a',
+                  transition: 'all 0.2s ease',
+                  '&:hover': {
+                    background: locale === 'en' ? '#e94560' : 'rgba(233, 69, 96, 0.08)',
+                  },
+                }}
+              >
+                English
+              </Box>
+            </Box>
           </Box>
         </Toolbar>
       </Container>
