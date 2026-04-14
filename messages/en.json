@@ -1,5 +1,42 @@
 {
-    "HomePage": {
-        "title": "turkirmp - Turkish RMP"
-    }
+  "HomePage": {
+    "title": "Hows My Prof?",
+    "subtitle": "Rate and review university professors across Turkey.",
+    "searchPlaceholder": "Search for a university...",
+    "noResults": "No results found."
+  },
+  "UniversityPage": {
+    "backHome": "Home",
+    "professors": "Professors",
+    "professorCount": "professors",
+    "reviews": "reviews",
+    "noProfessors": "No professors have been added for this university yet."
+  },
+  "ProfessorProfile": {
+    "overallRating": "Overall Rating",
+    "totalReviews": "Reviews",
+    "wouldTakeAgain": "Would Take Again",
+    "difficulty": "Difficulty",
+    "department": "Department",
+    "university": "University",
+    "reviews": "Reviews",
+    "noReviews": "No reviews yet. Be the first to write one!",
+    "writeReview": "Write a Review",
+    "courseCode": "Course Code",
+    "wouldTakeAgainLabel": "Would you take this professor again?",
+    "yes": "Yes",
+    "no": "No",
+    "commentPlaceholder": "Share your experience with this professor...",
+    "submitReview": "Submit Review",
+    "ratingLabel": "Rating",
+    "difficultyLabel": "Difficulty Level",
+    "reviewSuccess": "Your review has been submitted successfully!",
+    "reviewError": "Something went wrong. Please try again.",
+    "back": "Go Back"
+  },
+  "Common": {
+    "appName": "HocamıDeğerlendir",
+    "home": "Home",
+    "language": "Türkçe"
+  }
 }

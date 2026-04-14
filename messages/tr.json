@@ -1,5 +1,42 @@
 {
   "HomePage": {
-    "title": "KebabRMP - Kebab RMP"
+    "title": "Hocam Nasılmış?",
+    "subtitle": "Türkiye'deki üniversite hocalarını değerlendirin, yorumları okuyun ve dersleriniz hakkında bilgi edinin.",
+    "searchPlaceholder": "Üniversite ara...",
+    "noResults": "Sonuç bulunamadı."
+  },
+  "UniversityPage": {
+    "backHome": "Ana Sayfa",
+    "professors": "Hocalar",
+    "professorCount": "hoca",
+    "reviews": "değerlendirme",
+    "noProfessors": "Henüz bu üniversite için hoca eklenmemiş."
+  },
+  "ProfessorProfile": {
+    "overallRating": "Genel Puan",
+    "totalReviews": "Değerlendirme",
+    "wouldTakeAgain": "Tekrar Alırdım",
+    "difficulty": "Zorluk",
+    "department": "Bölüm",
+    "university": "Üniversite",
+    "reviews": "Değerlendirmeler",
+    "noReviews": "Henüz değerlendirme yok. İlk değerlendirmeyi siz yapın!",
+    "writeReview": "Değerlendirme Yaz",
+    "courseCode": "Ders Kodu",
+    "wouldTakeAgainLabel": "Bu hocayı tekrar alır mıydınız?",
+    "yes": "Evet",
+    "no": "Hayır",
+    "commentPlaceholder": "Dersiniz hakkında neler söylemek istersiniz?",
+    "submitReview": "Değerlendirmeyi Gönder",
+    "ratingLabel": "Puan",
+    "difficultyLabel": "Zorluk Seviyesi",
+    "reviewSuccess": "Değerlendirmeniz başarıyla gönderildi!",
+    "reviewError": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "back": "Geri Dön"
+  },
+  "Common": {
+    "appName": "HocamıDeğerlendir",
+    "home": "Ana Sayfa",
+    "language": "English"
   }
 }
