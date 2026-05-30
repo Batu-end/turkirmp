@@ -2,8 +2,10 @@
   "HomePage": {
     "title": "Hows My Prof?",
     "subtitle": "Rate and review university professors across Turkey.",
-    "searchPlaceholder": "Search for a university...",
-    "noResults": "No results found."
+    "searchPlaceholder": "Search for a university or professor...",
+    "noResults": "No results found.",
+    "searchGroupUniversities": "Universities",
+    "searchGroupProfessors": "Professors"
   },
   "UniversityPage": {
     "backHome": "Home",

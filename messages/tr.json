@@ -2,8 +2,10 @@
   "HomePage": {
     "title": "Hocam Nasılmış?",
     "subtitle": "Türkiye'deki üniversite hocalarını değerlendirin, yorumları okuyun ve dersleriniz hakkında bilgi edinin.",
-    "searchPlaceholder": "Üniversite ara...",
-    "noResults": "Sonuç bulunamadı."
+    "searchPlaceholder": "Üniversite veya hoca ara...",
+    "noResults": "Sonuç bulunamadı.",
+    "searchGroupUniversities": "Üniversiteler",
+    "searchGroupProfessors": "Hocalar"
   },
   "UniversityPage": {
     "backHome": "Ana Sayfa",
