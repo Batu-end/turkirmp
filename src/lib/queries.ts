@@ -131,7 +131,19 @@ export async function submitProfessorSuggestion(suggestion: ProfessorSuggestionI
   if (error) throw error;
 }
 
-export async function submitReview(review: ReviewInput): Promise<Review> {
+export async function countRecentReviewsByIp(ipHash: string): Promise<number> {
+  const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000).toISOString();
+  const { count, error } = await supabase
+    .from('reviews')
+    .select('*', { count: 'exact', head: true })
+    .eq('ip_hash', ipHash)
+    .gte('created_at', oneHourAgo);
+
+  if (error) throw error;
+  return count ?? 0;
+}
+
+export async function submitReview(review: ReviewInput, ipHash?: string): Promise<Review> {
   const { data, error } = await supabase
     .from('reviews')
     .insert({
@@ -141,6 +153,7 @@ export async function submitReview(review: ReviewInput): Promise<Review> {
       course_code: review.course_code || null,
       comment: review.comment,
       would_take_again: review.would_take_again ?? null,
+      ip_hash: ipHash ?? null,
     })
     .select()
     .single();
