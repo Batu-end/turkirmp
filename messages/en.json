@@ -12,7 +12,18 @@
     "professors": "Professors",
     "professorCount": "professors",
     "reviews": "reviews",
-    "noProfessors": "No professors have been added for this university yet."
+    "noProfessors": "No professors have been added for this university yet.",
+    "suggestButton": "Suggest a Professor",
+    "suggestTitle": "Suggest a Professor",
+    "suggestSubtitle": "Don't see your professor? Submit their info and we'll add them.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "department": "Department",
+    "titleLabel": "Academic Title (optional)",
+    "titlePlaceholder": "e.g. Prof. Dr., Doç. Dr.",
+    "suggestSubmit": "Submit Suggestion",
+    "suggestSuccess": "Thank you! We'll review your suggestion soon.",
+    "suggestError": "Something went wrong. Please try again."
   },
   "ProfessorProfile": {
     "overallRating": "Overall Rating",

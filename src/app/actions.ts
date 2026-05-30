@@ -1,11 +1,10 @@
 'use server';
 
-import { submitReview as submitReviewQuery } from '@/lib/queries';
-import type { ReviewInput } from '@/lib/types';
+import { submitReview as submitReviewQuery, submitProfessorSuggestion as submitSuggestionQuery } from '@/lib/queries';
+import type { ReviewInput, ProfessorSuggestionInput } from '@/lib/types';
 
 export async function submitReviewAction(input: ReviewInput) {
   try {
-    // Basic validation
     if (!input.professor_id) {
       return { success: false, error: 'Professor ID is required.' };
     }
@@ -24,5 +23,25 @@ export async function submitReviewAction(input: ReviewInput) {
   } catch (error) {
     console.error('Failed to submit review:', error);
     return { success: false, error: 'Failed to submit review. Please try again.' };
+  }
+}
+
+export async function submitProfessorSuggestionAction(input: ProfessorSuggestionInput) {
+  try {
+    if (!input.university_id) {
+      return { success: false, error: 'University is required.' };
+    }
+    if (!input.first_name?.trim() || !input.last_name?.trim()) {
+      return { success: false, error: 'First and last name are required.' };
+    }
+    if (!input.department?.trim()) {
+      return { success: false, error: 'Department is required.' };
+    }
+
+    await submitSuggestionQuery(input);
+    return { success: true };
+  } catch (error) {
+    console.error('Failed to submit suggestion:', error);
+    return { success: false, error: 'Failed to submit suggestion. Please try again.' };
   }
 }

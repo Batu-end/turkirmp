@@ -10,6 +10,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Chip from '@mui/material/Chip';
 import Navbar from '@/components/Navbar';
+import SuggestProfessorForm from '@/components/SuggestProfessorForm';
 import { getUniversityBySlug, getProfessorsByUniversity } from '@/lib/queries';
 import type { Metadata } from 'next';
 
@@ -234,6 +235,7 @@ export default function UniversityPage({ params }: Props) {
             ))}
           </Grid>
         )}
+        <SuggestProfessorForm universityId={university.id} />
       </Container>
     </Box>
   );

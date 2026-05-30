@@ -12,7 +12,18 @@
     "professors": "Hocalar",
     "professorCount": "hoca",
     "reviews": "değerlendirme",
-    "noProfessors": "Henüz bu üniversite için hoca eklenmemiş."
+    "noProfessors": "Henüz bu üniversite için hoca eklenmemiş.",
+    "suggestButton": "Hoca Öner",
+    "suggestTitle": "Hoca Öner",
+    "suggestSubtitle": "Aradığınız hocayı bulamadınız mı? Bilgilerini gönderin, ekleyelim.",
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "department": "Bölüm",
+    "titleLabel": "Akademik Unvan (opsiyonel)",
+    "titlePlaceholder": "ör. Prof. Dr., Doç. Dr.",
+    "suggestSubmit": "Öneriyi Gönder",
+    "suggestSuccess": "Teşekkürler! Önerinizi en kısa sürede inceleyeceğiz.",
+    "suggestError": "Bir hata oluştu. Lütfen tekrar deneyin."
   },
   "ProfessorProfile": {
     "overallRating": "Genel Puan",

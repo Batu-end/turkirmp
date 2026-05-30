@@ -8,6 +8,7 @@ import type {
   Review,
   ReviewInput,
   SearchResult,
+  ProfessorSuggestionInput,
 } from './types';
 
 // ============================================
@@ -114,6 +115,20 @@ export async function getReviewsByProfessor(professorId: string): Promise<Review
 
   if (error) throw error;
   return data ?? [];
+}
+
+export async function submitProfessorSuggestion(suggestion: ProfessorSuggestionInput): Promise<void> {
+  const { error } = await supabase
+    .from('professor_suggestions')
+    .insert({
+      university_id: suggestion.university_id,
+      first_name: suggestion.first_name.trim(),
+      last_name: suggestion.last_name.trim(),
+      department: suggestion.department.trim(),
+      title: suggestion.title?.trim() || null,
+    });
+
+  if (error) throw error;
 }
 
 export async function submitReview(review: ReviewInput): Promise<Review> {

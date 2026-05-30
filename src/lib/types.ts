@@ -56,6 +56,14 @@ export interface ReviewInput {
   would_take_again?: boolean;
 }
 
+export interface ProfessorSuggestionInput {
+  university_id: string;
+  first_name: string;
+  last_name: string;
+  department: string;
+  title?: string;
+}
+
 /** Search result item returned by the autocomplete */
 export interface SearchResult {
   id: string;
